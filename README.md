@@ -3,9 +3,8 @@ Train using Azure Machine Learning Compute
 
 # Na prática usando Azure Machine Learning
 
-[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=30A3DC)](https://github.com/fanzz293)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=LinkedIn&logoColor=30A3DC)](https://www.linkedin.com/in/fabricio-vieira-8bb2b298/)
-[![Gmail](https://img.shields.io/badge/Gmail-000?style=for-the-badge&logo=Gmail&logoColor=30)](https://www.linkedin.com/in/fabricio-vieira-8bb2b298/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=LinkedIn&logoColor=30A3DC)](https://www.linkedin.com/in/jacqueline-ribeiro-743876247/)
+
 
 ### Criando um modelo de previsão com os devidos pontos de extremidade configurados
 
