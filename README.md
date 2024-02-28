@@ -102,11 +102,11 @@ Quando o trabalho de aprendizado de máquina automatizado for concluído, você 
 <img width="889" alt="image" src="https://github.com/jacquelinepalumbo/Azure_ML/assets/119548193/8aec8c9d-933d-4a23-bb14-b47ab3465143">
 
 
-2. Selecione o texto em Nome do algoritmo para o melhor modelo para exibir seus detalhes.
+2. Selecione o texto em *Nome do algoritmo* para o melhor modelo para exibir seus detalhes.
 
-3. Selecione a guia Métricas e selecione os gráficos de resíduos e predicted_true se ainda não estiverem selecionados.
+3. Selecione a guia *Métricas* e selecione os *gráficos de resíduos* e *predicted_true* se ainda não estiverem selecionados.
 
-Analise os gráficos que mostram o desempenho do modelo. O gráfico de resíduos mostra os resíduos (as diferenças entre os valores previstos e reais) como um histograma. O gráfico predicted_true compara os valores previstos com os valores verdadeiros.
+Analise os gráficos que mostram o desempenho do modelo. O gráfico *de resíduos* mostra os resíduos (as diferenças entre os valores previstos e reais) como um histograma. O gráfico *predicted_true* compara os valores previstos com os valores verdadeiros.
 
 
 
@@ -114,20 +114,22 @@ Analise os gráficos que mostram o desempenho do modelo. O gráfico de resíduos
 # Implantando e testando o modelo 
 
 
-6. Na guia Modelo para obter o melhor modelo treinado pelo seu trabalho de aprendizado de máquina automatizado, selecione Implantar e usar a opção Serviço Web para implantar o modelo com as seguintes configurações:
-* Nome: predict-rentals
-* Descrição: Prever aluguéis de ciclos
-* Tipo de computação: Instância de Contêiner do Azure
-* Habilitar autenticação: Selecionado
-* Aguarde o início da implantação - isso pode levar alguns segundos. O status de implantação para o ponto de extremidade de aluguel de previsão será indicado na parte principal da página como Em execução.
-* Aguarde até que o status Implantar seja alterado para Bem-sucedido. Isso pode levar de 5 a 10 minutos.
-* Após isso, vamos aos testes!
+1. Na guia *Modelo* para obter o melhor modelo treinado pelo seu trabalho de aprendizado de máquina automatizado, selecione Implantar e usar a opção Serviço Web para implantar o modelo com as seguintes configurações:
+- *Nome*: predict-rentals
+- *Descrição*: Prever aluguéis de ciclos
+- *Tipo de computação*: Instância de Contêiner do Azure
+- *Habilitar autenticação*: Selecionado
 
-7. No estúdio do Aprendizado de Máquina do Azure, no menu à esquerda, selecione Pontos de extremidade e abra o ponto de extremidade em tempo real de aluguéis de previsão.
+2. Aguarde o início da implantação - isso pode levar alguns segundos. O status de implantação para o ponto de extremidade de aluguel de previsão será indicado na parte principal da página como Em execução.
+3. Aguarde até que o status Implantar seja alterado para Bem-sucedido. 
 
-##### Na página de ponto de extremidade em tempo real de aluguéis de previsão, exiba a guia Teste.
+# Testar o serviço implantado
 
-##### No painel Dados de entrada para testar o ponto de extremidade, substitua o modelo JSON pelos seguintes dados de entrada:
+1. No estúdio do Aprendizado de Máquina do Azure, no menu à esquerda, selecione *Pontos de extremidade* e abra o ponto de extremidade em tempo real *de aluguéis de previsão*.
+
+2. Na página de ponto de extremidade em tempo real de *aluguéis de previsão*, exiba a guia *Teste*.
+
+3. No painel *Dados de entrada para testar o ponto de extremidade*, substitua o modelo JSON pelos seguintes dados de entrada:
 
 ```
  {
@@ -153,9 +155,9 @@ Analise os gráficos que mostram o desempenho do modelo. O gráfico de resíduos
  }
 
  ```
-8. Clique no botão Testar.
+4. Clique no botão *Testar*.
 
-9. Analise os resultados do teste, que incluem um número previsto de aluguéis com base nos recursos de entrada.
+5. Analise os resultados do teste, que incluem um número previsto de aluguéis com base nos recursos de entrada:
 
 
  ```
@@ -167,9 +169,8 @@ Analise os gráficos que mostram o desempenho do modelo. O gráfico de resíduos
 
 ```
 
-##### O painel de teste pegou os dados de entrada e usou o modelo que você treinou para retornar o número previsto de aluguéis.
+O painel de teste pegou os dados de entrada e usou o modelo que você treinou para retornar o número previsto de aluguéis.
 
-&nbsp;
 
 
 # Executar o JSON bruto
