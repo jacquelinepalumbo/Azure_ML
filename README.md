@@ -16,17 +16,17 @@ O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se
 
 ### Criando ML automatizada 
 
-1. No estúdio de Aprendizado de Máquina do Azure, exiba a página ML automatizada (em Criação).
+1. No estúdio de Aprendizado de Máquina do Azure, exiba a página **ML automatizada** (em **Criação**).
 
 2. Crie um novo trabalho de ML automatizado com as seguintes configurações, usando Avançar conforme necessário para progredir pela interface do usuário:
 
 
 ### Configurações básicas:
 
-* **Nome do trabalho**: mslearn-bike-automl
-* **Novo nome do experimento**: mslearn-bike-rental
+* **Nome do trabalho**: *mslearn-bike-automl*
+* **Novo nome do experimento**: *mslearn-bike-rental*
 * **Descrição**: Aprendizado de máquina automatizado para previsão de aluguel de bicicletas
-* **Tags**: nenhuma
+* **Tags**: Nenhuma
 
 
 3. Na próxima etapa, preencha os campos com os seguintes dados:
@@ -39,14 +39,14 @@ O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se
 
 #### Tipo de dados:
 
-* **Nome**: bike-rentals
+* **Nome**: *bike-rentals*
 * **Descrição**: Dados históricos de aluguer de bicicletas
 * **Tipo**: Tabular
 
 #### Fonte de dados:
 * Selecionar **de arquivos da Web**
 * **URL da Web**: `https://aka.ms/bike-rentals`
-* **gnorar validação de dados**: não selecione
+* **gnorar validação de dados**: Não selecione
 
 #### Configurações:
 
@@ -55,7 +55,7 @@ O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se
 * **Codificação**: UTF-8
 * **Cabeçalhos de coluna**: Somente o primeiro arquivo tem cabeçalhos
 * **Pular linhas**: Nenhum
-* **O conjunto de dados contém dados de várias linhas**: não selecione
+* **O conjunto de dados contém dados de várias linhas**: Não selecione
 * **Esquema**:
 * Incluir todas as colunas diferentes de Caminho
 * Revisar os tipos detectados automaticamente
@@ -64,15 +64,18 @@ O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se
 #### Configurações da tarefa:
 
 * **Tipo de tarefa**: Regressão
-* **Conjunto de dados**: aluguel de bicicletas
+* **Conjunto de dados**: Aluguel de bicicletas
 * **Coluna de destino**: Aluguéis (inteiro)
 
 #### Definições de configuração adicionais
 
 * **Métrica primária**: Erro quadrático médio da raiz normalizada
 * **Explicar melhor modelo**: Não selecionado
-* **Use todos os modelos suportados**: Nãoselecionado. Você restringirá o trabalho para tentar apenas alguns algoritmos específicos.
-* **Modelos permitidos**: selecione apenas *RandomForest* e *LightGBM* — normalmente você gostaria de tentar o maior número possível, mas cada modelo adicionado aumenta o tempo necessário para executar o trabalho.
+* **Use todos os modelos suportados**: Não selecionado.
+* Você restringirá o trabalho para tentar apenas alguns algoritmos específicos.
+
+* **Modelos permitidos**: Selecione apenas *RandomForest* e *LightGBM* —
+* normalmente você gostaria de tentar o maior número possível, mas cada modelo adicionado aumenta o tempo necessário para executar o trabalho.
 
 #### Limites:
 
@@ -84,7 +87,7 @@ O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se
 * **Tempo limite de iteração**: 15
 * **Habilitar rescisão antecipada**: Selecionado
 
-#### Validação e teste:
+#### Validação e Teste:
 
 * **Tipo de validação**: Divisão de validação de trem
 * **Porcentagem de dados de validação**: 10
