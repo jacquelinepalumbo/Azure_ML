@@ -8,20 +8,26 @@ Train using Azure Machine Learning Compute
 
 ### Criando um modelo de previsão com os devidos pontos de extremidade configurados
 
-Descrição: Esta documentação tem como objetivo demonstrar um passo a passo de como criar um modelo de machine learning (aprendizado de máquina) automatizada na plataforma de estúdio da Azure. O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se em um conjunto de dados históricos de aluguel de bicicletas para treinar um modelo. O modelo prevê o número de aluguéis de bicicletas esperados em um determinado dia, com base em características sazonais e meteorológicas.
+**Descrição**: Esta documentação tem como objetivo demonstrar um passo a passo de como criar um modelo de machine learning automatizada na plataforma Microsoft da Azure. O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se em um conjunto de dados históricos de aluguel de bicicletas para treinar um modelo. O modelo prevê o número de aluguéis de bicicletas esperados em um determinado dia, com base em características sazonais e meteorológicas.
 
-⚠️⚠ É necessário logar-se em uma conta da microsoft e criar uma workspace (espaço de trabalho) na aba "estúdio de aprendizado de máquina".
+⚠️⚠ *É necessário logar-se em uma conta da microsoft e criar uma workspace (espaço de trabalho) na aba "estúdio de aprendizado de máquina"*.
 
-### Criando uma machine learning automatizada
-1. No ambiente workspace, clique em "ML automatizado", localizado à esquerda da tela.
-2. Na próxima janela, clique em "+Novo trabalho de ML automatizado"
-3. Um formulário será aberto. Preencha com os dados de configuração: 
- Nome do trabalho: mslearn-bike-automl
-* Nome do experimento
-* Descrição
-* Tags: Sem preenchimento 
+### Criando ML automatizada 
 
-4. Na próxima etapa, preencha os campos com os seguintes dados:
+1. No estúdio de Aprendizado de Máquina do Azure, exiba a página ML automatizada (em Criação).
+
+2. Crie um novo trabalho de ML automatizado com as seguintes configurações, usando Avançar conforme necessário para progredir pela interface do usuário:
+
+
+### Configurações básicas:
+
+* **Nome do trabalho**: mslearn-bike-automl
+* **Novo nome do experimento**: mslearn-bike-rental
+* **Descrição**: Aprendizado de máquina automatizado para previsão de aluguel de bicicletas
+* **Tags**: nenhuma
+
+
+3. Na próxima etapa, preencha os campos com os seguintes dados:
 
 #### Tipo de tarefa e dados:
 
