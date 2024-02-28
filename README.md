@@ -8,9 +8,9 @@ Train using Azure Machine Learning Compute
 
 ### Criando um modelo de previsão com os devidos pontos de extremidade configurados
 
-####  Descrição: Esta documentação tem como objetivo demonstrar um passo a passo de como criar um modelo de machine learning (aprendizado de máquina) automatizada na plataforma de estúdio da Azure. O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se em um conjunto de dados históricos de aluguel de bicicletas para treinar um modelo. O modelo prevê o número de aluguéis de bicicletas esperados em um determinado dia, com base em características sazonais e meteorológicas.
+Descrição: Esta documentação tem como objetivo demonstrar um passo a passo de como criar um modelo de machine learning (aprendizado de máquina) automatizada na plataforma de estúdio da Azure. O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se em um conjunto de dados históricos de aluguel de bicicletas para treinar um modelo. O modelo prevê o número de aluguéis de bicicletas esperados em um determinado dia, com base em características sazonais e meteorológicas.
 
-#### ⚠️⚠ É necessário logar-se em uma conta da microsoft e criar uma workspace (espaço de trabalho) na aba "estúdio de aprendizado de máquina".
+⚠️⚠ É necessário logar-se em uma conta da microsoft e criar uma workspace (espaço de trabalho) na aba "estúdio de aprendizado de máquina".
 
 ### Criando uma machine learning automatizada
 1. No ambiente workspace, clique em "ML automatizado", localizado à esquerda da tela.
