@@ -16,7 +16,7 @@ O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se
 
 ### Criando ML automatizada 
 
-1. No estúdio de Aprendizado de Máquina do Azure, exiba a página **ML automatizada** (em **Criação**).
+1. No [estúdio de Aprendizado de Máquina do Azure](https://ml.azure.com/), exiba a página **ML automatizada** (em **Criação**).
 
 2. Crie um novo trabalho de ML automatizado com as seguintes configurações, usando Avançar conforme necessário para progredir pela interface do usuário:
 
