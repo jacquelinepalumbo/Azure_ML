@@ -99,7 +99,8 @@ Tipo | Tabular
 Quando o trabalho de aprendizado de máquina automatizado for concluído, você poderá revisar o melhor modelo treinado.
 
 1. Na guia Visão geral do trabalho de aprendizado de máquina automatizado, observe o melhor resumo do modelo. 
-<img width="892" alt="image" src="https://github.com/jacquelinepalumbo/Azure_ML/assets/119548193/14905aca-3e2c-43f3-a338-15cfa07760ba">
+<img width="889" alt="image" src="https://github.com/jacquelinepalumbo/Azure_ML/assets/119548193/8aec8c9d-933d-4a23-bb14-b47ab3465143">
+
 
 2. Selecione o texto em Nome do algoritmo para o melhor modelo para exibir seus detalhes.
 
