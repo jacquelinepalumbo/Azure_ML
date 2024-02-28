@@ -194,8 +194,21 @@ O gráfico *predicted_true* compara os valores previstos com os valores verdadei
 O painel de teste pegou os dados de entrada e usou o modelo treinado para retornar o número previsto de aluguéis.
 
 Foi usado um conjunto de dados de dados históricos de aluguel de bicicletas para treinar um modelo. 
-O modelo prevê o número de aluguéis de bicicletas esperados em um determinado dia, com base em características sazonais e meteorológicas, neste caso 362 bikes,
- 
+O modelo prevê o número de aluguéis de bicicletas esperados em um determinado dia, com base em características sazonais e meteorológicas, neste caso **362 bikes**.
+
+
+# Limpeza
+
+O serviço Web que você criou está hospedado em uma *Instância de Contêiner do Azure*. Se você não pretende experimentá-lo mais, exclua o ponto de extremidade para evitar o uso desnecessário do Azure.
+
+1. No [estúdio do Aprendizado de Máquina do Azure](https://ml.azure.com/?azure-portal=true), na guia **Pontos de extremidade**, selecione o ponto **de extremidade de aluguel de previsão**. Em seguida, selecione **Excluir** e confirme que deseja excluir o ponto de extremidade.
+
+A exclusão da computação garante que sua assinatura não será cobrada por recursos de computação. No entanto, será cobrado um pequeno valor pelo armazenamento de dados, desde que o espaço de trabalho do Aprendizado de Máquina do Azure exista em sua assinatura. Se você tiver terminado de explorar o Aprendizado de Máquina do Azure, poderá excluir o espaço de trabalho do Aprendizado de Máquina do Azure e os recursos associados.
+
+* Para excluir seu espaço de trabalho:
+
+1. No portal do Azure, na página **Grupos de recurso**s, abra o grupo de recursos especificado ao criar seu espaço de trabalho do Aprendizado de Máquina do Azure.
+2. Clique em **Excluir grupo de recursos**, digite o nome do grupo de recursos para confirmar que deseja excluí-lo e selecione **Excluir**.
       
 
 
