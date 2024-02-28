@@ -92,9 +92,25 @@ Tipo | Tabular
 5. Envie o trabalho de treinamento. Ele começa automaticamente.
 
 
-* Aguarde a conclusão do trabalho. Pode demorar um pouco, em média 15 minutos dependendo da conexão de internet. 
+* Aguarde a conclusão do trabalho.  
+
+# Reveja o melhor modelo
+
+Quando o trabalho de aprendizado de máquina automatizado for concluído, você poderá revisar o melhor modelo treinado.
+
+1. Na guia Visão geral do trabalho de aprendizado de máquina automatizado, observe o melhor resumo do modelo. 
+<img width="892" alt="image" src="https://github.com/jacquelinepalumbo/Azure_ML/assets/119548193/14905aca-3e2c-43f3-a338-15cfa07760ba">
+
+2. Selecione o texto em Nome do algoritmo para o melhor modelo para exibir seus detalhes.
+
+3. Selecione a guia Métricas e selecione os gráficos de resíduos e predicted_true se ainda não estiverem selecionados.
+
+Analise os gráficos que mostram o desempenho do modelo. O gráfico de resíduos mostra os resíduos (as diferenças entre os valores previstos e reais) como um histograma. O gráfico predicted_true compara os valores previstos com os valores verdadeiros.
+
+
+
  
-#### Implantando e testando o modelo 
+# Implantando e testando o modelo 
 
 
 6. Na guia Modelo para obter o melhor modelo treinado pelo seu trabalho de aprendizado de máquina automatizado, selecione Implantar e usar a opção Serviço Web para implantar o modelo com as seguintes configurações:
