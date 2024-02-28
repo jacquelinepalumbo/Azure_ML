@@ -153,10 +153,10 @@ Tipo | Tabular
 ##### O painel de teste pegou os dados de entrada e usou o modelo que você treinou para retornar o número previsto de aluguéis.
 
 &nbsp;
-##### Referências:
+
+# Referências:
 
 
-[Explore Automated Machine Learning in Azure Machine Learning]
-(https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/01-machine-learning.html)
+[!Explore Automated Machine Learning in Azure Machine Learning](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/01-machine-learning.html)
 
 &nbsp;
