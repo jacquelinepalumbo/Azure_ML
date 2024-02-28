@@ -45,7 +45,7 @@ O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se
 
 #### Fonte de dados:
 * Selecionar **de arquivos da Web**
-* **URL da Web**: 'https://aka.ms/bike-rentals'
+* **URL da Web**: `https://aka.ms/bike-rentals`
 * **gnorar validação de dados**: não selecione
 
 #### Configurações:
@@ -69,15 +69,15 @@ O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se
 
 #### Definições de configuração adicionais
 
-**Métrica primária**: Erro quadrático médio da raiz normalizada
-**Explicar melhor modelo**: Não selecionado
-**Use todos os modelos suportados**: Nãoselecionado. Você restringirá o trabalho para tentar apenas alguns algoritmos específicos.
-**Modelos permitidos**: selecione apenas *RandomForest* e *LightGBM* — normalmente você gostaria de tentar o maior número possível, mas cada modelo adicionado aumenta o tempo necessário para executar o trabalho.
+* **Métrica primária**: Erro quadrático médio da raiz normalizada
+* **Explicar melhor modelo**: Não selecionado
+* **Use todos os modelos suportados**: Nãoselecionado. Você restringirá o trabalho para tentar apenas alguns algoritmos específicos.
+* **Modelos permitidos**: selecione apenas *RandomForest* e *LightGBM* — normalmente você gostaria de tentar o maior número possível, mas cada modelo adicionado aumenta o tempo necessário para executar o trabalho.
 
 #### Limites:
 
 * **Máximo de tentativas**: 3
-* Máximo de tentativas simultâneas**: 3
+* **Máximo de tentativas simultâneas**: 3
 * **Nós máximos**: 3
 * **Limiar de pontuação métrica**: 0,085 (de modo que, se um modelo atingir uma pontuação métrica quadrática média normalizada de 0,085 ou menos, o trabalho termina.)
 * **Tempo limite**: 15
