@@ -207,7 +207,7 @@ A exclusão da computação garante que sua assinatura não será cobrada por re
 
 * Para excluir seu espaço de trabalho:
 
-1. No portal do Azure, na página **Grupos de recurso**s, abra o grupo de recursos especificado ao criar seu espaço de trabalho do Aprendizado de Máquina do Azure.
+1. No [portal do Azure](https://portal.azure.com/?azure-portal=true#home), na página **Grupos de recurso**s, abra o grupo de recursos especificado ao criar seu espaço de trabalho do Aprendizado de Máquina do Azure.
 2. Clique em **Excluir grupo de recursos**, digite o nome do grupo de recursos para confirmar que deseja excluí-lo e selecione **Excluir**.
       
 
