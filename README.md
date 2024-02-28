@@ -8,7 +8,9 @@ Train using Azure Machine Learning Compute
 
 ### Criando um modelo de previsão com os devidos pontos de extremidade configurados
 
-**Descrição**: Esta documentação tem como objetivo demonstrar um passo a passo de como criar um modelo de machine learning automatizada na plataforma Microsoft da Azure. O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se em um conjunto de dados históricos de aluguel de bicicletas para treinar um modelo. O modelo prevê o número de aluguéis de bicicletas esperados em um determinado dia, com base em características sazonais e meteorológicas.
+**Descrição**: Esta documentação tem como objetivo demonstrar um passo a passo de como criar um modelo de machine learning automatizada na plataforma Microsoft da Azure. 
+
+O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se em um conjunto de dados históricos de aluguel de bicicletas para treinar um modelo, que prevê o número de aluguéis de bicicletas esperados em um determinado dia, com base em características sazonais e meteorológicas.
 
 ⚠️⚠ *É necessário logar-se em uma conta da microsoft e criar uma workspace (espaço de trabalho) na aba "estúdio de aprendizado de máquina"*.
 
@@ -31,75 +33,77 @@ Train using Azure Machine Learning Compute
 
 #### Tipo de tarefa e dados:
 
-Seleção | Valor
---------------------------|-----------------
-Selecionar tipo de tarefa | Regressão
-Selecionar conjunto de dados | Crie um novo conjunto de dados com as seguintes configurações:
+
+* **Selecionar tipo de tarefa**: Regressão
+* **Selecionar conjunto de dados**: Crie um novo conjunto de dados com as seguintes configurações:
 
 #### Tipo de dados:
 
-Seleção | Valor
---------------------------|-----------------
-Nome | bike-rentals
-Descrição | Dados históricos de aluguer de bicicletas
-Tipo | Tabular
+* **Nome**: bike-rentals
+* **Descrição**: Dados históricos de aluguer de bicicletas
+* **Tipo***: Tabular
 
 #### Fonte de dados:
-* Selecionar de arquivos da Web
-* URL da Web: https://aka.ms/bike-rentals
-* Ignorar validação de dados: não selecione
+* Selecionar **de arquivos da Web**
+* **URL da Web**: 'https://aka.ms/bike-rentals'
+* **gnorar validação de dados**: não selecione
 
 #### Configurações:
 
-* Formato de arquivo: Delimitado
-* Delimitador: Vírgula
-* Codificação: UTF-8
-* Cabeçalhos de coluna: Somente o primeiro arquivo tem cabeçalhos
-* Pular linhas: Nenhum
-* O conjunto de dados contém dados de várias linhas: não selecione
-* Esquema:
+* ** Formato de arquivo**: Delimitado
+* **Delimitador**: Vírgula
+* **Codificação**: UTF-8
+* **Cabeçalhos de coluna**: Somente o primeiro arquivo tem cabeçalhos
+* **Pular linhas**: Nenhum
+* **O conjunto de dados contém dados de várias linhas**: não selecione
+* **Esquema**:
 * Incluir todas as colunas diferentes de Caminho
 * Revisar os tipos detectados automaticamente
-* Selecione Criar. Depois que o conjunto de dados for criado, selecione o conjunto de dados de aluguel de bicicletas para continuar a enviar o trabalho de ML automatizado.
+* Selecione **Criar**. Depois que o conjunto de dados for criado, selecione o conjunto de dados de aluguel de bicicletas para continuar a enviar o trabalho de ML automatizado.
 
 #### Configurações da tarefa:
-* Tipo de tarefa: Regressão
-* Conjunto de dados: aluguel de bicicletas
-* Coluna de destino: Aluguéis (inteiro)
+
+* **Tipo de tarefa**: Regressão
+* **Conjunto de dados**: aluguel de bicicletas
+* **Coluna de destino**: Aluguéis (inteiro)
 
 #### Definições de configuração adicionais
+
 **Métrica primária**: Erro quadrático médio da raiz normalizada
 **Explicar melhor modelo**: Não selecionado
 **Use todos os modelos suportados**: Nãoselecionado. Você restringirá o trabalho para tentar apenas alguns algoritmos específicos.
 **Modelos permitidos**: selecione apenas *RandomForest* e *LightGBM* — normalmente você gostaria de tentar o maior número possível, mas cada modelo adicionado aumenta o tempo necessário para executar o trabalho.
 
 #### Limites:
-**Máximo de tentativas**: 3
-**Máximo de tentativas simultâneas**: 3
-**Nós máximos**: 3
-**Limiar de pontuação métrica**: 0,085 (de modo que, se um modelo atingir uma pontuação métrica quadrática média normalizada de 0,085 ou menos, o trabalho termina.)
-**Tempo limite**: 15
-**Tempo limite de iteração**: 15
-**Habilitar rescisão antecipada**: Selecionado
+
+* **Máximo de tentativas**: 3
+* Máximo de tentativas simultâneas**: 3
+* **Nós máximos**: 3
+* **Limiar de pontuação métrica**: 0,085 (de modo que, se um modelo atingir uma pontuação métrica quadrática média normalizada de 0,085 ou menos, o trabalho termina.)
+* **Tempo limite**: 15
+* **Tempo limite de iteração**: 15
+* **Habilitar rescisão antecipada**: Selecionado
 
 #### Validação e teste:
-**Tipo de validação**: Divisão de validação de trem
-**Porcentagem de dados de validação**: 10
-**Conjunto de dados de teste**: Nenhum
+
+* **Tipo de validação**: Divisão de validação de trem
+* **Porcentagem de dados de validação**: 10
+* **Conjunto de dados de teste**: Nenhum
 
 #### Computação:
-**Selecione o tipo de computação**: Serverless
-**Tipo de máquina virtual**: CPU
-**Camada de máquina virtual**: Dedicado
-**Tamanho da máquina virtual**: Standard_DS3_V2*
-**Número de instâncias**: 1
+
+* **Selecione o tipo de computação**: Serverless
+* **Tipo de máquina virtual**: CPU
+* Camada de máquina virtual**: Dedicado
+* **Tamanho da máquina virtual**: Standard_DS3_V2*
+* **Número de instâncias**: 1
 
 Se sua assinatura restringir os tamanhos de VM disponíveis para você, escolha qualquer tamanho disponível.
 
-5. Envie o trabalho de treinamento. Ele começa automaticamente.
+4. Envie o trabalho de treinamento. Ele começa automaticamente.
 
 
-* Aguarde a conclusão do trabalho.  
+* *Aguarde a conclusão do trabalho*.  
 
 # Reveja o melhor modelo
 
