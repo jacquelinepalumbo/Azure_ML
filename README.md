@@ -6,9 +6,9 @@ Train using Azure Machine Learning Compute
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=LinkedIn&logoColor=30A3DC)](https://www.linkedin.com/in/jacqueline-ribeiro-743876247/)
 
 
-### Criando um modelo de previsão com os devidos pontos de extremidade configurados
+### Criando um modelo de previsão com os devidos pontos de extremidade configurados.
 
-**Descrição**: Esta documentação tem como objetivo demonstrar um passo a passo de como criar um modelo de machine learning automatizada na plataforma Microsoft da Azure. 
+**Descrição**: Esta documentação tem como objetivo demonstrar um passo a passo de como criar um modelo de Machine Learning automatizada na plataforma Microsoft da Azure. 
 
 O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se em um conjunto de dados históricos de aluguel de bicicletas para treinar um modelo, que prevê o número de aluguéis de bicicletas esperados em um determinado dia, com base em características sazonais e meteorológicas.
 
@@ -41,7 +41,7 @@ O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se
 
 * **Nome**: bike-rentals
 * **Descrição**: Dados históricos de aluguer de bicicletas
-* **Tipo***: Tabular
+* **Tipo**: Tabular
 
 #### Fonte de dados:
 * Selecionar **de arquivos da Web**
@@ -50,7 +50,7 @@ O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se
 
 #### Configurações:
 
-* ** Formato de arquivo**: Delimitado
+* **Formato de arquivo**: Delimitado
 * **Delimitador**: Vírgula
 * **Codificação**: UTF-8
 * **Cabeçalhos de coluna**: Somente o primeiro arquivo tem cabeçalhos
