@@ -62,32 +62,33 @@ Tipo | Tabular
 * Coluna de destino: Aluguéis (inteiro)
 
 #### Definições de configuração adicionais
-* Métrica primária: Erro quadrático médio da raiz normalizada
-* Explicar melhor modelo: Não selecionado
-* Use todos os modelos suportados: Nãoselecionado. Você restringirá o trabalho para tentar apenas alguns algoritmos específicos.
-* Modelos permitidos: selecione apenas RandomForest e LightGBM — normalmente você gostaria de tentar o maior número possível, mas cada modelo adicionado aumenta o tempo necessário para executar o trabalho.
+**Métrica primária**: Erro quadrático médio da raiz normalizada
+**Explicar melhor modelo**: Não selecionado
+**Use todos os modelos suportados**: Nãoselecionado. Você restringirá o trabalho para tentar apenas alguns algoritmos específicos.
+**Modelos permitidos**: selecione apenas *RandomForest* e *LightGBM* — normalmente você gostaria de tentar o maior número possível, mas cada modelo adicionado aumenta o tempo necessário para executar o trabalho.
 
 #### Limites:
-* Máximo de tentativas: 3
-* Máximo de tentativas simultâneas: 3
-*  Nós máximos: 3
-* Limiar de pontuação métrica: 0,085 (de modo que, se um modelo atingir uma pontuação métrica quadrática média normalizada de 0,085 ou menos, o trabalho termina.)
-* Tempo limite: 15
-* Tempo limite de iteração: 15
-* Habilitar rescisão antecipada: Selecionado
+**Máximo de tentativas**: 3
+**Máximo de tentativas simultâneas**: 3
+**Nós máximos**: 3
+**Limiar de pontuação métrica**: 0,085 (de modo que, se um modelo atingir uma pontuação métrica quadrática média normalizada de 0,085 ou menos, o trabalho termina.)
+**Tempo limite**: 15
+**Tempo limite de iteração**: 15
+**Habilitar rescisão antecipada**: Selecionado
 
 #### Validação e teste:
-* Tipo de validação: Divisão de validação de trem
-* Porcentagem de dados de validação: 10
-* Conjunto de dados de teste: Nenhum
+**Tipo de validação**: Divisão de validação de trem
+**Porcentagem de dados de validação**: 10
+**Conjunto de dados de teste**: Nenhum
 
 #### Computação:
-* Selecione o tipo de computação: Serverless
-* Tipo de máquina virtual: CPU
-* Camada de máquina virtual: Dedicado
-* Tamanho da máquina virtual: Standard_DS3_V2*
-* Número de instâncias: 1
-* Se sua assinatura restringir os tamanhos de VM disponíveis para você, escolha qualquer tamanho disponível.
+**Selecione o tipo de computação**: Serverless
+**Tipo de máquina virtual**: CPU
+**Camada de máquina virtual**: Dedicado
+**Tamanho da máquina virtual**: Standard_DS3_V2*
+**Número de instâncias**: 1
+
+Se sua assinatura restringir os tamanhos de VM disponíveis para você, escolha qualquer tamanho disponível.
 
 5. Envie o trabalho de treinamento. Ele começa automaticamente.
 
@@ -102,13 +103,13 @@ Quando o trabalho de aprendizado de máquina automatizado for concluído, você 
 <img width="889" alt="image" src="https://github.com/jacquelinepalumbo/Azure_ML/assets/119548193/8aec8c9d-933d-4a23-bb14-b47ab3465143">
 
 
-2. Selecione o texto em *Nome do algoritmo* para o melhor modelo para exibir seus detalhes.
+2. Selecione o texto em **Nome do algoritmo** para o melhor modelo para exibir seus detalhes.
 
-3. Selecione a guia *Métricas* e selecione os *gráficos de resíduos* e *predicted_true* se ainda não estiverem selecionados.
+3. Selecione a guia **Métricas** e selecione os **gráficos de resíduos** e **predicted_true** se ainda não estiverem selecionados.
 
 Analise os gráficos que mostram o desempenho do modelo. 
 
-O gráfico *de resíduos* mostra os resíduos (as diferenças entre os valores previstos e reais) como um histograma. 
+O gráfico **de resíduos** mostra os resíduos (as diferenças entre os valores previstos e reais) como um histograma. 
 
 <img width="847" alt="image" src="https://github.com/jacquelinepalumbo/Azure_ML/assets/119548193/b7274521-7192-4f57-9023-c07d7024e71b">
 
@@ -122,22 +123,22 @@ O gráfico *predicted_true* compara os valores previstos com os valores verdadei
 # Implantando e testando o modelo 
 
 
-1. Na guia *Modelo* para obter o melhor modelo treinado pelo seu trabalho de aprendizado de máquina automatizado, selecione Implantar e usar a opção Serviço Web para implantar o modelo com as seguintes configurações:
-- *Nome*: predict-rentals
-- *Descrição*: Prever aluguéis de ciclos
-- *Tipo de computação*: Instância de Contêiner do Azure
-- *Habilitar autenticação*: Selecionado
+1. Na guia **Modelo** para obter o melhor modelo treinado pelo seu trabalho de aprendizado de máquina automatizado, selecione Implantar e usar a opção Serviço Web para implantar o modelo com as seguintes configurações:
+- **Nome**: predict-rentals
+- **Descrição**: Prever aluguéis de ciclos
+- **Tipo de computação**: Instância de Contêiner do Azure
+- **Habilitar autenticação**: Selecionado
 
 2. Aguarde o início da implantação - isso pode levar alguns segundos. O status de implantação para o ponto de extremidade de aluguel de previsão será indicado na parte principal da página como Em execução.
 3. Aguarde até que o status Implantar seja alterado para Bem-sucedido. 
 
 # Testar o serviço implantado
 
-1. No estúdio do Aprendizado de Máquina do Azure, no menu à esquerda, selecione *Pontos de extremidade* e abra o ponto de extremidade em tempo real *de aluguéis de previsão*.
+1. No estúdio do Aprendizado de Máquina do Azure, no menu à esquerda, selecione **Pontos de extremidade** e abra o ponto de extremidade em tempo real **de aluguéis de previsão**.
 
-2. Na página de ponto de extremidade em tempo real de *aluguéis de previsão*, exiba a guia *Teste*.
+2. Na página de ponto de extremidade em tempo real de **aluguéis de previsão**, exiba a guia **Teste**.
 
-3. No painel *Dados de entrada para testar o ponto de extremidade*, substitua o modelo JSON pelos seguintes dados de entrada:
+3. No painel **Dados de entrada para testar o ponto de extremidade**, substitua o modelo JSON pelos seguintes dados de entrada:
 
 ```
  {
