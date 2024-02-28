@@ -106,8 +106,16 @@ Quando o trabalho de aprendizado de máquina automatizado for concluído, você 
 
 3. Selecione a guia *Métricas* e selecione os *gráficos de resíduos* e *predicted_true* se ainda não estiverem selecionados.
 
-Analise os gráficos que mostram o desempenho do modelo. O gráfico *de resíduos* mostra os resíduos (as diferenças entre os valores previstos e reais) como um histograma. O gráfico *predicted_true* compara os valores previstos com os valores verdadeiros.
+Analise os gráficos que mostram o desempenho do modelo. 
 
+O gráfico *de resíduos* mostra os resíduos (as diferenças entre os valores previstos e reais) como um histograma. 
+
+<img width="847" alt="image" src="https://github.com/jacquelinepalumbo/Azure_ML/assets/119548193/b7274521-7192-4f57-9023-c07d7024e71b">
+
+
+O gráfico *predicted_true* compara os valores previstos com os valores verdadeiros.
+
+<img width="839" alt="image" src="https://github.com/jacquelinepalumbo/Azure_ML/assets/119548193/a05999f7-5b8c-45e6-9c6d-1e41088367a1">
 
 
  
