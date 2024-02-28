@@ -140,12 +140,23 @@ Tipo | Tabular
 
 9. Analise os resultados do teste, que incluem um número previsto de aluguéis com base nos recursos de entrada.
 
+
+ ```
+{
+   "Results": [
+     444.27799000000000
+   ]
+ }
+
+```
+
 ##### O painel de teste pegou os dados de entrada e usou o modelo que você treinou para retornar o número previsto de aluguéis.
 
 &nbsp;
 ##### Referências:
 
 
-[Explore o Aprendizado de Máquina Automatizado no Aprendizado de Máquina do Azure, disponível](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/01-machine-learning.html)
+[Explore Automated Machine Learning in Azure Machine Learning]
+(https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/01-machine-learning.html)
 
 &nbsp;
