@@ -97,7 +97,7 @@ O modelo é uma simulação de um serviço de aluguel de bicicletas, baseando-se
 
 * **Selecione o tipo de computação**: Serverless
 * **Tipo de máquina virtual**: CPU
-* Camada de máquina virtual**: Dedicado
+* **Camada de máquina virtual**: Dedicado
 * **Tamanho da máquina virtual**: Standard_DS3_V2*
 * **Número de instâncias**: 1
 
