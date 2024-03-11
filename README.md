@@ -214,7 +214,7 @@ A exclusão da computação garante que sua assinatura não será cobrada por re
 
 # Referências:
 
+[Explore Automated Machine Learning in Azure Machine Learning](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/01-machine-learning.html)
 
-[Explore an Azure AI Search index (UI)](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/11-ai-search.html)
 
 &nbsp;
